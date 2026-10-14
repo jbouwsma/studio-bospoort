@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080908">
+  <meta name="description" content="Binnenkort: Studio Bospoort. Een plek voor human design en persoonlijke coaching met Ingrid Bosch.">
+  <title>Studio Bospoort — Coming soon</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <style>
+    :root { color-scheme: dark; --bg: #080908; --ink: #e9e5dc; --muted: #a5a59a; --accent: #b8b695; }
+    * { box-sizing: border-box; }
+    html { min-height: 100%; background: var(--bg); }
+    body { margin: 0; color: var(--ink); font-family: Arial, Helvetica, sans-serif; -webkit-font-smoothing: antialiased; }
+    .page { min-height: 100svh; display: flex; flex-direction: column; padding: 38px 5vw 28px; position: relative; overflow: hidden; }
+    .page::before { content: ''; position: absolute; pointer-events: none; width: 800px; height: 800px; left: 50%; top: 42%; transform: translate(-50%, -50%); background: radial-gradient(ellipse, #adb39709, transparent 65%); }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 20px; position: relative; }
+    .wordmark { font-size: 11px; font-weight: 500; letter-spacing: .25em; text-transform: uppercase; }
+    .domain { font-size: 11px; color: var(--muted); letter-spacing: .04em; }
+    main { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 70px 0 86px; position: relative; }
+    .symbol { width: 61px; height: 85px; margin-bottom: 38px; color: var(--accent); }
+    .eyebrow { margin: 0 0 22px; color: var(--accent); font-size: 10px; letter-spacing: .32em; text-transform: uppercase; }
+    h1 { font-family: 'Baskerville', 'Iowan Old Style', 'Palatino Linotype', 'Book Antiqua', Georgia, serif; font-size: clamp(65px, 9.5vw, 132px); font-weight: 400; line-height: .94; letter-spacing: -.045em; margin: 0; }
+    h1 span { display: block; }
+    h1 .studio { font-style: italic; font-size: .74em; line-height: 1.1; letter-spacing: -.035em; }
+    .line { width: 38px; height: 1px; background: #b8b69566; margin: 34px 0 27px; }
+    .intro { font-family: 'Baskerville', 'Iowan Old Style', Georgia, serif; font-size: clamp(19px, 2.3vw, 24px); margin: 0 0 12px; font-weight: 400; }
+    .description { max-width: 400px; color: var(--muted); font-size: 13px; line-height: 1.9; margin: 0; }
+    .visit { color: var(--ink); text-decoration: none; font-size: 11px; letter-spacing: .04em; padding: 11px 0; margin-top: 28px; border-bottom: 1px solid #737766; display: inline-flex; align-items: center; gap: 24px; transition: color .2s, border-color .2s; }
+    .visit:hover { color: var(--accent); border-color: var(--accent); }
+    .visit:focus-visible { outline: 2px solid var(--accent); outline-offset: 7px; }
+    .visit svg { width: 14px; height: 14px; }
+    footer { border-top: 1px solid #e9e5dc18; padding-top: 21px; display: flex; align-items: center; justify-content: space-between; gap: 15px; color: var(--muted); font-size: 10px; position: relative; }
+    .services { letter-spacing: .14em; text-transform: uppercase; }
+    .soon { display: flex; align-items: center; gap: 8px; }
+    .dot { width: 5px; height: 5px; background: var(--accent); border-radius: 50%; }
+    @media (max-width: 540px) { .page { padding: 25px 25px 23px; } .wordmark { font-size: 9px; letter-spacing: .19em; } .domain { font-size: 9px; } main { padding: 58px 0 65px; } .symbol { margin-bottom: 29px; width: 49px; height: 70px; } footer { font-size: 9px; } .services { letter-spacing: .08em; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header><span class="wordmark">Studio Bospoort</span><span class="domain">studiobospoort.nl</span></header>
+    <main>
+      <svg class="symbol" viewBox="0 0 64 90" fill="none" aria-hidden="true"><path d="M9 85V34C9 3 55 3 55 34V85M17 85V35C17 14 47 14 47 35V85M25 85V36C25 25 39 25 39 36V85M3 85H61" stroke="currentColor" stroke-width=".85"/><path d="M32 45V85" stroke="currentColor" stroke-width=".65" opacity=".5"/></svg>
+      <p class="eyebrow">Coming soon</p>
+      <h1><span class="studio">Studio</span><span>Bospoort</span></h1>
+      <div class="line" aria-hidden="true"></div>
+      <p class="intro">Ruimte om jezelf te ontmoeten.</p>
+      <p class="description">Binnenkort opent hier de studio van Ingrid Bosch.<br>Een plek voor human design en persoonlijke coaching.</p>
+      <a class="visit" href="https://ingridbosch.nl/">Ontdek meer over Ingrid <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 13 13 3M4 3h9v9" stroke="currentColor" stroke-width="1"/></svg></a>
+    </main>
+    <footer><span class="services">Human design &amp; coaching</span><span class="soon"><span class="dot" aria-hidden="true"></span>Binnenkort aan de Bospoort</span></footer>
+  </div>
+</body>
+</html>
